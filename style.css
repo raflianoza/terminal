@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            background-color: lightcoral;
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+        .roboto-mono {
+            font-family: "Roboto Mono", serif;
+            font-optical-sizing: auto;
+            font-weight: 400px;
+            font-style: normal;
+        }
+
+        .container {
+            background-color: lightcoral;
+            padding: 1rem;
+        }
+
+        .terminal {
+            /* size */
+            width: 90%;
+            height: 20rem;
+
+            /* color */
+            background-color: #282a36;
+
+            /* rounded */
+            /* border: 2px solid #282a36;
+            border-radius: 8px; */
+
+            /* sum layouting and shit */
+            margin: auto;
+        }
+
+        /* navbar */
+
+        .bar {  
+            background: rgb(242,242,242);
+            background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(212,212,212,1) 100%);
+            padding: 3px;
+            padding-left: 4px;
+            height: 1rem;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .red, .yellow, .green {
+            width: .5rem;
+            height: .5rem;
+            margin-right: .2rem;
+            margin-top: .1rem;
+        }
+
+        .bar > .red {
+            background-color: #fc605c;
+            border: 2px solid #fc605c;
+            border-radius: 100px;
+        }
+
+        .bar > .yellow {
+            background-color: #fec141;
+            border: 2px solid #fec141;
+            border-radius: 100px;
+        }
+
+        .bar > .green {
+            background-color: #35cd4b;
+            border: 2px solid #35cd4b;
+            border-radius: 100px;
+        }
+
+        .title {
+            margin: auto;
+            font-size: .75rem;
+        }
+
+        /* content */
+        .content {
+            padding: .25rem;
+            color: #f5f5f5;
+            font-size: .85rem;
+            line-height: 1.4;
+        }
+        
+        /* min 1000 px */
+        @media screen and (min-width: 1000px) {
+            .terminal {
+                width: 70%;
+            }
+        }
+
+
+        /* Made with love by Rafliano Ziyad Adzani */
